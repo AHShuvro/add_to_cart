@@ -427,7 +427,8 @@ const products = [
 
 const links = [
     {
-        name: `Shop`, subMenu: true, children: [
+        name: `Shop`, link: '/shop', subMenu: false,
+        children: [
             {
                 head: "Topwear",
                 subLink: [
@@ -457,7 +458,7 @@ const links = [
         ]
     },
     {
-        name: `Product`, subMenu: true,
+        name: `Product`, link: '/product', subMenu: false,
         children: [
             {
                 head: "Topwear",
@@ -485,7 +486,7 @@ const links = [
         ]
     },
     {
-        name: `Pages`, subMenu: true,
+        name: `Pages`, link: '/pages', subMenu: false,
         children: [
             {
                 head: "Boys",
@@ -511,7 +512,7 @@ const links = [
         ]
     },
     {
-        name: `Blog`, subMenu: true,
+        name: `Blog`, link: '/blog', subMenu: false,
         children: [
             {
                 head: "Boys",

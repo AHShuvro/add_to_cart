@@ -22,7 +22,7 @@ const ArrivalsProducts = () => {
             <div className='flex flex-col items-center gap-4 mb-8'>
                 <h3 className='text-4xl text-[#222222] font-semibold'>New Arrivals</h3>
                 <div className='cursor-pointer flex items-center  duration-150 font-semibold text-[#222222] hover:text-teal-600'>
-                    <Link className="flex items-center " to={'/allProducts'}><p>View all Products  </p><MdOutlineChevronRight className="mt-[3px]" /></Link>
+                    <Link className="flex items-center " to={'/shop'}><p>View all Products  </p><MdOutlineChevronRight className="mt-[3px]" /></Link>
                 </div>
             </div>
             <Swiper

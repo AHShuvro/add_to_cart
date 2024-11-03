@@ -5,6 +5,7 @@ import { FaRegEye, FaRegHeart } from "react-icons/fa";
 import { IoLayersOutline } from "react-icons/io5";
 import { FcRating } from "react-icons/fc";
 import { MdOutlineChevronRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const TopTranding = () => {
     return (
@@ -12,8 +13,8 @@ const TopTranding = () => {
         <div className="my-16 px-16">
             <div className='flex flex-col items-center gap-4 mb-8'>
                 <h3 className='text-4xl text-[#222222] font-semibold'>Top Trending</h3>
-                <div className='cursor-pointer flex items-center  duration-150 font-semibold text-[#222222] hover:text-teal-600'>
-                    <p>View all Products  </p><MdOutlineChevronRight className="mt-[3px]" />
+                <div className='cursor-pointer  duration-150 font-semibold text-[#222222] hover:text-teal-600'>
+                    <Link className="flex items-center" to={'/shop'}><p>View all Products  </p><MdOutlineChevronRight className="mt-[3px]" /></Link>
                 </div>
             </div>
             <div className="grid grid-cols-5">

@@ -32,17 +32,17 @@ function Nav() {
                         </div>
                     </div>
                     <ul className='md:flex hidden uppercase items-center gap-8 font-[poppins]'>
-                        <li className='text-sm text-[#222222] font-medium py-7 px-3 inline-block cursor-pointer hover:text-teal-600'>
+                        <Link to={'/'}><li className='text-sm text-[#222222] font-medium py-7 px-3 inline-block cursor-pointer hover:text-teal-600'>
                             Home
-                        </li>
+                        </li></Link>
                         {links.map((link, idx) => (
                             <div key={idx} className='px-3 text-left md:cursor-pointer group'>
                                 <div className='flex items-center gap-2 group-hover:text-teal-600'>
-                                    <li className='text-sm text-[#222222] font-medium py-7 group-hover:text-teal-600'>
+                                    <Link to={link.link}><li className='text-sm text-[#222222] font-medium py-7 group-hover:text-teal-600'>
                                         {link.name}
-                                    </li>
-                                    <FaAngleUp className='group-hover:block hidden' />
-                                    <FaAngleDown className='group-hover:hidden' />
+                                    </li></Link>
+                                    {link.subMenu && <><FaAngleUp className='group-hover:block hidden' />
+                                        <FaAngleDown className='group-hover:hidden' /></>}
                                 </div>
                                 {link.subMenu && (
                                     <div>
