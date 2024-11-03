@@ -1,46 +1,28 @@
-// import React from 'react';
-// import { BrowserRouter as Route, Routes, BrowserRouter } from 'react-router-dom';
-// import Home from './pages/Home';
-// import Details from './pages/Details';
-// import Layout from './components/Layout';
-
-
-// const App = () => {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path='/' element={<Layout />}>
-//           <Route index element={Home} />
-//           <Route path="/about" element={Details} />
-//         </Route>
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// };
-
-// export default App;
-
-
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+// import Home from './pages/Products_1';
 import Details from './pages/Details';
-import Layout from './components/Layout';
+// import Layout from './components/Layout';
 import Carts from './pages/Carts';
 import { CartProvider } from 'react-use-cart';
+import HomePage from './pages/HomePage';
+import Nav from './components/Nav/Nav';
+// import AllProductPage from './pages/AllProductPage';
+import ArrivalProductPage from './pages/ArrivalProductPage';
+import Wishlist from './components/Products/Wishlist';
 
 const App = () => {
   
   return (
     <Router>
       <CartProvider>
+        <Nav />
         <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="/details" element={<Details />} />
-            <Route path={`/details/:slug`} element={<Details />} />
-            <Route path="/carts" element={<Carts />} />
-          </Route>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/allProducts' element={<ArrivalProductPage />} />
+          <Route path="/details" element={<Details />} />
+          <Route path='/allProducts/:slug' element={<Details />} />
+          <Route path="/cart" element={<Carts />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
       </CartProvider>
     </Router>
@@ -48,4 +30,3 @@ const App = () => {
 };
 
 export default App;
-
