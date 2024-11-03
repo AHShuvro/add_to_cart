@@ -121,7 +121,7 @@ const products = [
         slug: 'vintage-wood-shelf',
         categories: ['Furniture', 'Storage'],
         brand: 'Rustic Charm',
-        colors: [{ name: 'Walnut', hex: '#6B4226' }, { name: 'Oak', hex: '#BC8F8F' }, { name: 'White', hex: '#FFFFFF' }, { name: 'Gray', hex: '#B0BEC5' }, { name: 'Espresso', hex: '#3B2F2F' }],
+        colors: [{ name: 'Walnut', hex: '#6B4226' }, { name: 'Red', hex: '#FF0000' }, { name: 'White', hex: '#FFFFFF' }, { name: 'Gray', hex: '#B0BEC5' }, { name: 'Espresso', hex: '#3B2F2F' }],
         inStock: true,
         tags: ['shelf', 'vintage', 'rustic'],
     },

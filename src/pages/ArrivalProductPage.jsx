@@ -6,15 +6,13 @@ const ArrivalProductPage = () => {
 
     const [filteredProducts, setFilteredProducts] = useState(products);
     const [selectedCategory, setSelectedCategory] = useState(null);
-    const [selectedColor, setSelectedColor] = useState(null);
 
     const uniqueCategories = Array.from(new Set(products.flatMap(product => product.categories)));
 
     const uniqueColors = Array.from(new Set(products.flatMap(product => product.colors.map(color => color.hex))));
 
-    const handleFilter = (category, color) => {
+    const handleFilter = (category) => {
         setSelectedCategory(category);
-        setSelectedColor(color);
 
         let updatedProducts = products;
 
@@ -23,14 +21,13 @@ const ArrivalProductPage = () => {
             updatedProducts = updatedProducts.filter(product => product.categories.includes(category));
         }
 
-        if (color) {
-            updatedProducts = updatedProducts.filter(product =>
-                product.colors.some(c => c.name === color)
-            );
-        }
+        console.log(category);
+
 
         setFilteredProducts(updatedProducts);
     };
+
+    handleFilter
 
     return (
         <div className='flex justify-center w-full gap-6 container mx-auto px-2 mb-8 sm:mb-12 md:mb-24'>
@@ -41,8 +38,8 @@ const ArrivalProductPage = () => {
                         {uniqueCategories.map((category, index) => (
                             <li
                                 key={index}
-                                onClick={() => handleFilter(category, selectedColor)}
-                                className={`text-base text-[#888888] hover:text-teal-600 mb-1 cursor-pointer duration-300 ${selectedCategory === category ? 'font-bold' : ''}`}
+                                onClick={() => handleFilter(category)}
+                                className={`text-base text-[#888888] hover:text-teal-600 mb-1 cursor-pointer duration-300 ${selectedCategory === category ? 'font-bold text-teal-600 duration-0' : ''}`}
                             >
                                 {category}
                             </li>
@@ -53,7 +50,7 @@ const ArrivalProductPage = () => {
                         {uniqueColors.map((color, index) => (
                             <li
                                 key={index}
-                                onClick={() => handleFilter(selectedCategory, color)}
+                                onClick={() => handleFilter(color)}
                                 style={{
                                     backgroundColor: color,
                                 }}
