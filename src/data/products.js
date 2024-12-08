@@ -688,68 +688,100 @@ const topTrandingProducts = [
     },
 ];
 
+
 const blogInfo = [
     {
         img1: '3_297a37dd-b9e2-473f-ac8b-a52858b6f668.webp',
         name: 'Plants',
         title: 'How to Care for Your ZZ Plant',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Indoor Plants',
+        description: 'Learn the essentials for taking care of your ZZ plant, including light, water, and soil needs.',
+        date: '2023-04-12'
     },
     {
         img1: '2_7a80b7e5-8551-4976-926f-0c53836b4a25.webp',
         name: 'Pothos',
         title: '5 Easy Steps to Keep Your Pothos Thriving',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Indoor Plants',
+        description: 'Follow these simple steps to make sure your Pothos remains healthy and vibrant.',
+        date: '2023-04-15'
     },
     {
         img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Snake Plant',
         title: 'The Ultimate Guide to Snake Plant Care',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Indoor Plants',
+        description: 'A comprehensive guide to caring for your snake plant, a popular low-maintenance houseplant.',
+        date: '2023-04-18'
     },
     {
-        img1: '18_SpiderPlant_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Spider Plant',
         title: 'Spider Plant: Benefits and Care Tips',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Air-Purifying Plants',
+        description: 'Explore the benefits of spider plants and learn tips to keep them thriving indoors.',
+        date: '2023-04-20'
     },
     {
-        img1: '19_FiddleLeafFig_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Fiddle Leaf Fig',
         title: 'Caring for Your Fiddle Leaf Fig: A Complete Guide',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Indoor Trees',
+        description: 'Discover how to take care of your fiddle leaf fig, one of the trendiest indoor plants.',
+        date: '2023-04-25'
     },
     {
-        img1: '20_Succulents_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Succulents',
         title: 'Succulent Care: Tips for a Lush Garden',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Succulents',
+        description: 'Learn essential succulent care tips to create a vibrant, low-maintenance garden.',
+        date: '2023-05-01'
     },
     {
-        img1: '21_RubberPlant_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Rubber Plant',
         title: 'Everything You Need to Know About Rubber Plants',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Indoor Trees',
+        description: 'An in-depth guide to growing and caring for rubber plants indoors.',
+        date: '2023-05-03'
     },
     {
-        img1: '22_Cactus_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Cactus',
         title: 'Cactus Care: How to Keep Your Cactus Happy',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Succulents',
+        description: 'Tips on how to care for cacti and keep them healthy and thriving.',
+        date: '2023-05-07'
     },
     {
-        img1: '23_PeaceLily_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Peace Lily',
         title: 'Peace Lily: A Beautiful Addition to Your Home',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Flowering Plants',
+        description: 'Discover the beauty of peace lilies and tips for caring for this elegant plant.',
+        date: '2023-05-10'
     },
     {
-        img1: '24_Sansevieria_2.webp',
+        img1: '1_43d5392f-3db4-41c2-9da8-86ce90cbf6fe.webp',
         name: 'Sansevieria',
         title: 'Sansevieria: The Hardy Houseplant You Need',
-        author: 'Posted by Alo Support'
+        author: 'Posted by Alo Support',
+        category: 'Air-Purifying Plants',
+        description: 'Find out why Sansevieria is a great choice for beginners and busy plant owners.',
+        date: '2023-05-14'
     },
 ];
+
 
 
 const instaImg = [
@@ -775,5 +807,39 @@ export const itemVariants = {
 
 
 
-export { products, links, arrivalProducts, topTrandingProducts, blogInfo, instaImg };
+const footerData = {
+    contact: {
+        hotline: "(+100) 123 456 7890",
+        address: "1234 Heaven Street, Beverly Hill, Melbourne, USA",
+        email: "aloshopify@alothemes.com",
+    },
+    quickLinks: [
+        "My Account",
+        "Product Support",
+        "Checkout",
+        "Shopping Cart",
+        "Wishlist",
+        "Custom Link",
+        "Redeem Voucher",
+    ],
+    customerService: [
+        "Help Center",
+        "Contact Us",
+        "Report Abuse",
+        "Submit a Dispute",
+        "Policies & Rules",
+        "Online Returns Policy",
+    ],
+    newCustomers: [
+        "How to use My Account",
+        "Placing an Order",
+        "Payment Methods",
+        "Delivery & Dispatch",
+        "Problems with your Order",
+    ],
+};
+
+
+
+export { products, links, arrivalProducts, topTrandingProducts, blogInfo, instaImg, footerData };
 

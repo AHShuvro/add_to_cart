@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FaRegEye, FaRegHeart } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 import { IoLayersOutline } from 'react-icons/io5';
 import { FcRating } from 'react-icons/fc';
 import { useExtendedCart } from '../data/use-react-cart';
 import { useEffect, useState } from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
 
 function ProductCart({ product }) {
   const { name, price, img1, img2, slug, id, colors } = product;
@@ -16,6 +16,7 @@ function ProductCart({ product }) {
     addItemToCart,
     addItemToWishlist,
     isInCart,
+    isInWishlist,
   } = useExtendedCart();
 
   const handleAddToCart = () => {
@@ -67,8 +68,8 @@ function ProductCart({ product }) {
           </Link>
 
           <div className='absolute hidden group-hover:flex flex-col gap-1 top-4 right-4 pointer-events-auto'>
-            <div onClick={handleAddToWishlist} className='w-8 h-8 flex items-center justify-center duration-300 rounded-full bg-white hover:bg-teal-600 text-black hover:text-white cursor-pointer'>
-              <FaRegHeart />
+            <div onClick={handleAddToWishlist} className={`w-8 h-8 flex items-center justify-center duration-300 rounded-full ${isInWishlist(id) ? ' bg-teal-600 text-white' : ' bg-white hover:bg-teal-600 text-black hover:text-white cursor-pointer'}`}>
+            <FaRegHeart />
             </div>
             <div className='w-8 h-8 flex items-center justify-center duration-300 rounded-full bg-white hover:bg-teal-600 text-black hover:text-white cursor-pointer'>
               <IoLayersOutline />

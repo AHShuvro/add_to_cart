@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero_1 from '../components/Hero/Hero_1';
 import ArrivalsProducts from '../components/Products/ArrivalsProducts';
 import College_1 from '../components/Collage/College_1';
@@ -9,6 +8,7 @@ import Services_1 from '../components/Clients/Services/Services_1';
 import Brand_1 from '../components/Brand/Brand_1';
 import Insta from '../components/Socials/Insta';
 import Contact_1 from '../components/Contact/Contact_1';
+import Footer from '../components/Footer/Footer';
 
 const HomePage = () => {
     return (
@@ -23,6 +23,7 @@ const HomePage = () => {
         <Brand_1 />
         <Insta />
         <Contact_1 />
+        <Footer />
 
         </>
     );

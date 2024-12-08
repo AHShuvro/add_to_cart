@@ -22,7 +22,7 @@ const Wishlist = () => {
                 <div className="grid grid-cols-1 gap-4 p-4">
                     {wishlistItems.map((item, idx) => (
                         <div className="flex items-center justify-between bg-gray-100 p-4 rounded-md shadow-sm" key={idx}>
-                            <img src={item.img} alt={item.name} className="w-24 h-24 object-cover rounded-md" />
+                            <img src={item.img1} alt={item.name} className="w-24 h-24 object-cover rounded-md" />
                             <div className="flex flex-col flex-grow mx-4">
                                 <h3 className="text-lg font-semibold">{item.name}</h3>
                                 <p className="text-gray-600">Price: ${item.price.toFixed(2)}</p>

@@ -25,7 +25,7 @@ function Nav() {
                 <div className='flex items-center justify-between'>
                     <div className='z-50 md:w-auto w-full flex justify-between items-center py-4'>
                         <Link to={'/'}>
-                            <h2 className='md:cursor-pointer text-3xl font-medium'>Logo</h2>
+                            <h2 className='md:cursor-pointer text-3xl font-medium'>MORATA</h2>
                         </Link>
                         <div onClick={() => setOpen(!open)} className='text-2xl md:hidden'>
                             {open ? <IoClose /> : <FaBars />}
