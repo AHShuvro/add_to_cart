@@ -458,60 +458,6 @@ const links = [
         ]
     },
     {
-        name: `Product`, link: '/product', subMenu: false,
-        children: [
-            {
-                head: "Topwear",
-                subLink: [
-                    { name: 'Tops', link: '/womens/topwear/tops' },
-                    { name: 'Blouses', link: '/womens/topwear/blouses' },
-                    { name: 'Dresses', link: '/womens/topwear/dresses' },
-                ]
-            },
-            {
-                head: "Bottomwear",
-                subLink: [
-                    { name: 'Skirts', link: '/womens/bottomwear/skirts' },
-                    { name: 'Pants', link: '/womens/bottomwear/pants' },
-                ]
-            },
-            {
-                head: "Footwear",
-                subLink: [
-                    { name: 'Flats', link: '/womens/footwear/flats' },
-                    { name: 'Heels', link: '/womens/footwear/heels' },
-                    { name: 'Boots', link: '/womens/footwear/boots' },
-                ]
-            }
-        ]
-    },
-    {
-        name: `Pages`, link: '/pages', subMenu: false,
-        children: [
-            {
-                head: "Boys",
-                subLink: [
-                    { name: 'T-shirts', link: '/kids/boys/tshirts' },
-                    { name: 'Pants', link: '/kids/boys/pants' },
-                ]
-            },
-            {
-                head: "Girls",
-                subLink: [
-                    { name: 'Dresses', link: '/kids/girls/dresses' },
-                    { name: 'Skirts', link: '/kids/girls/skirts' },
-                ]
-            },
-            {
-                head: "Footwear",
-                subLink: [
-                    { name: 'Sneakers', link: '/kids/footwear/sneakers' },
-                    { name: 'Sandals', link: '/kids/footwear/sandals' },
-                ]
-            }
-        ]
-    },
-    {
         name: `Blog`, link: '/blog', subMenu: false,
         children: [
             {
